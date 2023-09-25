@@ -1,25 +1,71 @@
 package com.example.cw1809;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.ViewCompat;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.content.res.Resources;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.GridView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
     private boolean isResultCalc;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         isResultCalc = false;
+        Resources res = this.getResources();
+        GridLayout buttonsGreed = findViewById(R.id.buttonsGrid);
+
+        ArrayList<Button> calcBtn = new ArrayList<Button>();
+        calcBtn.add(findViewById(R.id.buttonMultiply));
+        calcBtn.add(findViewById(R.id.buttonDivide));
+        calcBtn.add(findViewById(R.id.buttonAdd));
+        calcBtn.add(findViewById(R.id.buttonSubtract));
+        calcBtn.add(findViewById(R.id.buttonEqual));
+
+        GradientDrawable drawable = new GradientDrawable();
+        drawable.setShape(GradientDrawable.RECTANGLE);
+        drawable.setCornerRadius(0);
+
+        for (int i = 0; i < buttonsGreed.getChildCount(); i++) {
+            View child = buttonsGreed.getChildAt(i);
+            if (child instanceof Button) {
+                Button button = (Button) child;
+                button.setPadding(button.getPaddingLeft(),0,button.getPaddingRight(),0);
+                button.setWidth((int) res.getDimension(R.dimen.bnt_width));
+                button.setHeight((int) res.getDimension(R.dimen.bnt_height));
+                button.setTextSize(res.getDimension(R.dimen.text_size));
+                button.setBackground(drawable);
+                if (calcBtn.contains(button)) {
+                    ViewCompat.setBackgroundTintList(button, ColorStateList.valueOf(
+                            res.getColor(R.color.red, null)));
+                    button.setTextColor(res.getColor(R.color.white, null));
+                } else {
+                    ViewCompat.setBackgroundTintList(button, ColorStateList.valueOf(
+                            res.getColor(R.color.black, null)));
+                    button.setTextColor(res.getColor(R.color.black, null));
+                }
+            }
+        }
     }
 
     public void onClick(View view) {
         TextView textView = findViewById(R.id.inputResult);
-        if(isResultCalc){
+        textView.setTextSize(getResources().getDimension(R.dimen.text_size));
+        if (isResultCalc) {
             textView.setText("");
             isResultCalc = false;
         }
@@ -61,17 +107,23 @@ public class MainActivity extends AppCompatActivity {
         } else if (id == R.id.buttonBack) {
             String result = textView.getText().toString();
             if (result.length() > 0) {
-                result = result.substring(0, result.length() - 1);
-                textView.setText(result);
+                String[] numbers = result.split("\\s");
+                if(Arrays.stream(numbers).count()>1){
+                    calculate(view,true);
+                }
+                else{
+                    textView.setText(String.valueOf(Double.parseDouble(result)*-1));
+                }
             }
         } else if (id == R.id.buttonEqual) {
-            calculate(view);
+            calculate(view,false);
         } else {
             throw new IllegalStateException("Unexpected value: " + view.getId());
         }
     }
+
     @SuppressLint("SetTextI18n")
-    public void calculate(View view) {
+    public void calculate(View view, boolean isNegative) {
         TextView textView = findViewById(R.id.inputResult);
         String result = textView.getText().toString();
         //check if the input is empty
@@ -114,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
                                 default:
                                     break;
                             }
-                            textView.setText(String.valueOf(resultCalc));
+                            textView.setText(String.valueOf(isNegative?resultCalc*-1:resultCalc));
                         } else {
                             textView.setText("Invalid Expression");
                         }

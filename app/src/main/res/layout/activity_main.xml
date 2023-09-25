@@ -1,109 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MainActivity">-->
-<!--    -->
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:orientation="vertical"-->
-<!--    android:weightSum="1">-->
-
-
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="0.5">-->
-
-<!--        <GridLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:rowCount="2"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button11"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button9"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button7"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_row="1"-->
-<!--                android:layout_column="0"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button5"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Button" />-->
-<!--        </GridLayout>-->
-
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight=".5">-->
-
-<!--        <GridLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:rowCount="2"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent">-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button12"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button10"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button8"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_row="1"-->
-<!--                android:layout_column="0"-->
-<!--                android:text="Button" />-->
-
-<!--            <Button-->
-<!--                android:id="@+id/button6"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Button" />-->
-<!--        </GridLayout>-->
-
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-<!--</LinearLayout>-->
-
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--    xmlns:app="http://schemas.android.com/apk/res-auto"--><!--    xmlns:tools="http://schemas.android.com/tools"--><!--    android:layout_width="match_parent"--><!--    android:layout_height="match_parent"--><!--    tools:context=".MainActivity">--><!--    --><!--</androidx.constraintlayout.widget.ConstraintLayout>--><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--    xmlns:app="http://schemas.android.com/apk/res-auto"--><!--    xmlns:tools="http://schemas.android.com/tools"--><!--    android:layout_width="match_parent"--><!--    android:layout_height="match_parent"--><!--    android:orientation="vertical"--><!--    android:weightSum="1">--><!--    <androidx.constraintlayout.widget.ConstraintLayout--><!--        android:layout_width="match_parent"--><!--        android:layout_height="wrap_content"--><!--        android:layout_weight="0.5">--><!--        <GridLayout--><!--            android:layout_width="wrap_content"--><!--            android:layout_height="wrap_content"--><!--            android:rowCount="2"--><!--            app:layout_constraintBottom_toBottomOf="parent"--><!--            app:layout_constraintEnd_toEndOf="parent"--><!--            app:layout_constraintStart_toStartOf="parent"--><!--            app:layout_constraintTop_toTopOf="parent">--><!--            <Button--><!--                android:id="@+id/button11"--><!--                android:layout_width="wrap_content"--><!--                android:layout_height="wrap_content"--><!--                android:text="Button" />--><!--            <Button--><!--                android:id="@+id/button9"--><!--                android:layout_width="wrap_content"--><!--                android:layout_height="wrap_content"--><!--                android:text="Button" />--><!--            <Button--><!--                android:id="@+id/button7"--><!--                android:layout_width="wrap_content"--><!--                android:layout_height="wrap_content"--><!--                android:layout_row="1"--><!--                android:layout_column="0"--><!--                android:text="Button" />--><!--            <Button--><!--                android:id="@+id/button5"--><!--                android:layout_width="wrap_content"--><!--                android:layout_height="wrap_content"--><!--                android:text="Button" />--><!--        </GridLayout>--><!--    </androidx.constraintlayout.widget.ConstraintLayout>--><!--    <androidx.constraintlayout.widget.ConstraintLayout--><!--        android:layout_width="match_parent"--><!--        android:layout_height="wrap_content"--><!--        android:layout_weight=".5">--><!--        <GridLayout--><!--            android:layout_width="wrap_content"--><!--            android:layout_height="wrap_content"--><!--            android:rowCount="2"--><!--            app:layout_constraintBottom_toBottomOf="parent"--><!--            app:layout_constraintEnd_toEndOf="parent"--><!--            app:layout_constraintStart_toStartOf="parent"--><!--            app:layout_constraintTop_toTopOf="parent">--><!--            <Button--><!--                android:id="@+id/button12"--><!--                android:layout_width="wrap_content"--><!--                android:layout_height="wrap_content"--><!--                android:text="Button" />--><!--            <Button--><!--                android:id="@+id/button10"--><!--                android:layout_width="wrap_content"--><!--                android:layout_height="wrap_content"--><!--                android:text="Button" />--><!--            <Button--><!--                android:id="@+id/button8"--><!--                android:layout_width="wrap_content"--><!--                android:layout_height="wrap_content"--><!--                android:layout_row="1"--><!--                android:layout_column="0"--><!--                android:text="Button" />--><!--            <Button--><!--                android:id="@+id/button6"--><!--                android:layout_width="wrap_content"--><!--                android:layout_height="wrap_content"--><!--                android:text="Button" />--><!--        </GridLayout>--><!--    </androidx.constraintlayout.widget.ConstraintLayout>--><!--</LinearLayout>-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -119,6 +14,11 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/tmpData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
             android:id="@+id/inputResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -131,187 +31,169 @@
         android:orientation="vertical">
 
         <GridLayout
+            android:id="@+id/buttonsGrid"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="fill_horizontal"
+            android:layout_gravity="fill"
+            android:background="@drawable/grid_border"
             android:columnCount="4"
-            android:rowCount="6">
+            android:rowCount="6"
+            android:useDefaultMargins="false">
 
             <Button
                 android:id="@+id/buttonClear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_rowSpan="2"
                 android:layout_column="0"
                 android:onClick="onClick"
-                android:text="C" />
+                android:text="@string/btnClear"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/buttonBack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_column="1"
                 android:onClick="onClick"
-                android:text="Back" />
+                android:text="@string/btnBack"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/buttonMod"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_column="2"
                 android:onClick="onClick"
-                android:text="%" />
+                android:text="@string/btnPercent"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/buttonDivide"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_column="3"
                 android:onClick="onClick"
-                android:text="/" />
+                android:text="@string/btnDivide"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="2"
                 android:layout_column="0"
                 android:onClick="onClick"
-                android:text="7" />
+                android:text="@string/btn7"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="2"
                 android:layout_column="1"
                 android:onClick="onClick"
-                android:text="8" />
+                android:text="@string/btn8"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="2"
                 android:layout_column="2"
                 android:onClick="onClick"
-                android:text="9" />
+                android:text="@string/btn9"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/buttonMultiply"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="2"
                 android:layout_column="3"
                 android:onClick="onClick"
-                android:text="*" />
+                android:text="@string/btnMultiply"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="3"
                 android:layout_column="0"
                 android:onClick="onClick"
-                android:text="4" />
+                android:text="@string/btn4"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="3"
                 android:layout_column="1"
                 android:onClick="onClick"
-                android:text="5" />
+                android:text="@string/btn5"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="3"
                 android:layout_column="2"
                 android:onClick="onClick"
-                android:text="6" />
+                android:text="@string/btn6"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/buttonSubtract"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="3"
                 android:layout_column="3"
                 android:onClick="onClick"
-                android:text="-" />
+                android:text="@string/btnMinus"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="4"
                 android:layout_column="0"
                 android:onClick="onClick"
-                android:text="1" />
+                android:text="@string/btn1"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="4"
                 android:layout_column="1"
                 android:onClick="onClick"
-                android:text="2" />
+                android:text="@string/btn2"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="4"
                 android:layout_column="2"
                 android:onClick="onClick"
-                android:text="3" />
+                android:text="@string/btn3"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/buttonAdd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="4"
                 android:layout_column="3"
                 android:onClick="onClick"
-                android:text="+" />
+                android:text="@string/btnPlus"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/button0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="5"
                 android:layout_column="0"
                 android:layout_columnSpan="2"
                 android:layout_gravity="fill_horizontal"
                 android:onClick="onClick"
-                android:text="0" />
+                android:text="@string/btn0"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/buttonDot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="5"
                 android:layout_column="2"
                 android:onClick="onClick"
-                android:text="." />
+                android:text="@string/btnDot"
+                app:cornerRadius="0dp" />
 
             <Button
                 android:id="@+id/buttonEqual"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_row="5"
                 android:layout_column="3"
                 android:onClick="onClick"
-                android:text="=" />
-
+                android:text="@string/btnEqual"
+                app:cornerRadius="0dp" />
         </GridLayout>
-
     </LinearLayout>
 </LinearLayout>
