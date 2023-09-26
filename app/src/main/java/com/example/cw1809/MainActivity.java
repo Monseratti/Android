@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private boolean isResultCalc;
@@ -44,20 +45,17 @@ public class MainActivity extends AppCompatActivity {
             View child = buttonsGreed.getChildAt(i);
             if (child instanceof Button) {
                 Button button = (Button) child;
-                button.setPadding(button.getPaddingLeft(),0,button.getPaddingRight(),0);
                 button.setWidth((int) res.getDimension(R.dimen.bnt_width));
                 button.setHeight((int) res.getDimension(R.dimen.bnt_height));
                 button.setTextSize(res.getDimension(R.dimen.text_size));
-                button.setBackground(drawable);
                 if (calcBtn.contains(button)) {
-                    ViewCompat.setBackgroundTintList(button, ColorStateList.valueOf(
-                            res.getColor(R.color.red, null)));
+                    button.setBackgroundColor(res.getColor(R.color.red, null));
                     button.setTextColor(res.getColor(R.color.white, null));
                 } else {
-                    ViewCompat.setBackgroundTintList(button, ColorStateList.valueOf(
-                            res.getColor(R.color.black, null)));
-                    button.setTextColor(res.getColor(R.color.black, null));
+                    button.setBackgroundColor(res.getColor(R.color.black, null));
+                    button.setTextColor(res.getColor(R.color.white, null));
                 }
+                //button.setBackground(drawable);
             }
         }
     }
